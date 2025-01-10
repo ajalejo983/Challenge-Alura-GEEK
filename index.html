@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura GEEK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="cabezote">
+            <img src="./imagenes/logo_alurageek.png" alt="Alura Geek" id="logo">
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="seccion_productos">
+            <!-- Products Section -->
+            <section id="producto">
+                <h2 class="producto__titulo">Mis Productos</h2>
+                <ul id="listado_productos" alt="productos geek" data-productos>
+                    
+
+                    <!-- Product items will be dynamically added here -->
+                </ul>
+            </section>
+
+            <!-- Product Form Section -->
+        
+        <aside class="formulario__seccion">
+            <h2 class="formulario__titulo">Agregar Producto</h2>
+                <form id="formulario_producto" data-formulario>
+                    <label class="formulario__campo" for="nombre_producto">Nombre</label>
+                    <input type="text" id="nombre_producto" name="nombre_producto" placeholder="Ingresa el nombre del producto" required data-nombre>
+
+                    <label class="formulario__campo" for="precio_producto">Precio</label>
+                    <input type="number" id="precio_producto" name="precio_producto" placeholder="Precio en COP" required data-precio>
+
+                    <label class="formulario__campo" for="imagen_producto">Imagen</label>
+                    <input type="text" id="imagen_producto" name="imagen_producto" required data-imagen>
+
+                    <div class="formulario__seccion__botones">
+                        <button class="formulario__boton__agregar" type="submit">Añadir Producto</button>
+                        <button class="formulario__boton__limpiar" type="reset">Limpiar</button>
+                    </div>
+                </form>
+        </aside>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <img class="logo_footer" src="./imagenes/logo_alurageek.png">
+            <p class="footer__firma">Desarrollado por Alejandro Angulo Jimenez</p>
+            <p>ALURA LATAM 2024</p>
+        </div>
+    </footer>
+<script src="./js/mostrarproductos.js" type="module"></script>
+<script src="./js/creandoproducto.js" type="module"></script>
+</body>
+</html>
